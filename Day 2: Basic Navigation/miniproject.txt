@@ -1,4 +1,5 @@
-Scenario and Goal: The developers requested that they need a specific directory structure for a new application called "Project Apollo", but they  need you to clean up a temporary lock file that’s stuck in another directory. You need to create its structure, verify its files, and reorganise it without losing your place in the terminal.
+Scenario and Goal: 
+The developers requested that they need a specific directory structure for a new application called "Project Apollo", but they  need you to clean up a temporary lock file that’s stuck in another directory. You need to create its structure, verify its files, and reorganise it without losing your place in the terminal.
 Steps:
 1. Read the documentation about `mkdir` that specifies about creating parent directories.
 2. Create a directory called `staging_server` and a file called `lockfile.tmp`.

@@ -1,0 +1,23 @@
+Title: Get to know your server -- Day 1
+Source: https://linuxupskillchallenge.org/01/#general-information-about-the-server
+
+Tasks: 
+- Run a few simple commands to check the status of your machine.
+
+Commands learned:
+- `lsb_release -a` --> View the linux Distro and its version
+  Other commands: `cat /etc/os-release`
+- `uname -a` --> Display the system information
+- `uptime` --> Display how long the system is running
+- `whoami` --> Display the username you are logging in
+- `lshw` --> Display about the hardware information
+  Some of them include:
+  - `lscpu` --> Display CPU Architecture
+  - `lsblk` --> Block Devices
+  - `lspci` --> PCI devices
+  - `lsusb` --> USB devices
+- `free -h` --> Checking available storage in memory
+- `ifconfig` --> Show IP Address information
+  Alternative: `ip address`
+- `netstat -i` --> Show IP Address bandwidth (Static)
+  Continuous: `ifstat`

@@ -1,0 +1,77 @@
+The small project is created by using an LLM Gemini with 2.5 pro model.
+
+Prompt: Imagine you are a linux administrator in a tech company. You are talking with an arduous learner who is finished day 2 of linux upskill challenge. 
+Today, he learned about different types of commands that finds about documentation and navigate between different directories, such as create, list, and 
+delete files. He also learned about pushd and popd commands. Provide him a mini project that reflects today's learning objective:
+  - Find documentation for commands learned today.
+  - Navigate between different directories.
+  - Create, list, and delete files.
+Make sure it reflects with the real world scenario, be realistic with the description and challenge level!
+
+Response: 
+Hey there. Good to see you stuck with it. Day 2 is where the fog starts to lift a little, isn't it?
+
+Most beginners think being a SysAdmin is about memorizing 5,000 commands. It’s not. It’s about knowing how to find the answer when you don't know it, and moving through the file system fast enough to put out a fire before the CEO notices.
+
+You learned `man`, `pushd`, and file management today. That is the bread and butter of server maintenance.
+
+Here is a scenario I run into constantly. I call this mini-project **"The Hotfix Deployment."**
+
+***
+
+### 2. The Scenario
+**Context:** You are managing a staging server. The developers just messaged you saying they need a specific directory structure set up for a new application called "Project Apollo," but they also need you to clean up a temporary lock file that’s stuck in another directory.
+
+**Your Mission:** You need to create the structure, verify the files, and clean up the mess without losing your place in the terminal.
+
+
+
+---
+
+### 3. The Mission Brief (Your Steps)
+
+Open your terminal. Do not use your mouse.
+
+#### Phase 1: The Documentation Check
+Before we touch anything, we need to be efficient. The developers need a directory tree created all at once: `project_apollo/conf/local`.
+* **The Challenge:** Usually, `mkdir` fails if the parent directory doesn't exist.
+* **Action:** Open the manual for `mkdir` (`man mkdir`). Find the flag (option) that allows you to create **"parent directories"** as needed.
+* **Goal:** Memorize that flag. You will use it in the next step.
+
+#### Phase 2: Establishing the Base
+Now, create a "playground" so we don't mess up your actual home folder.
+* **Action:** Create a directory named `staging_server` in your home folder.
+* **Action:** Change directory (`cd`) into `staging_server`.
+* **Action:** Create a dummy "stuck" file here called `lockfile.tmp` using the `touch` command.
+
+#### Phase 3: The Deep Dive (Using `pushd`)
+We are currently in `~/staging_server`. We need to go deep into the new project folder to create a config file, but we need to remember that we have to come back here to delete that `lockfile.tmp` later. This is exactly what the directory stack is for.
+* **Action:** Using the flag you found in Phase 1, create the directory path `project_apollo/conf/local`.
+* **Action:** Instead of `cd`, use **`pushd`** to move into `project_apollo/conf/local`.
+* **Action:** verify you are there using `pwd`.
+
+#### Phase 4: Configuration and Verification
+Now that you are deep in the structure:
+* **Action:** Create an empty file named `app.config`.
+* **Action:** You need to list the file you just created, but I want to see the **long format** (showing permissions and time) to make sure it was created correctly.
+* **Challenge:** If you don't remember the flag for "long listing," look it up in `man ls`.
+
+#### Phase 5: The Snap Back (Using `popd`)
+You've done the work in the deep directory. Now you need to instantly return to the `staging_server` root to clean up that lock file.
+* **Action:** Use **`popd`**.
+* **Observation:** Notice how it snaps you right back to where you were before the `pushd`. You should be back in `~/staging_server`.
+
+#### Phase 6: Cleanup
+* **Action:** Delete the `lockfile.tmp` file.
+* **Action:** Verify it is gone with a standard list command.
+
+---
+
+### 4. The Admin's Debrief (Why we did this)
+
+1.  **`mkdir -p` (Did you find it?):** In the real world, we never type `mkdir folder`, `cd folder`, `mkdir subfolder`. We use `mkdir -p folder/subfolder`. It saves time.
+2.  **`pushd` vs `cd`:** When you are editing a config file deep in `/etc/nginx/sites-available/` and need to quickly check a log file in `/var/log/nginx/`, `pushd` is a lifesaver. It leaves a breadcrumb trail so you can find your way home.
+
+**How did that feel?** If you managed to find the `-p` flag and the `-l` flag on your own using `man`, you're already thinking like an admin.
+
+**Would you like me to show you the solution commands to check your work?**

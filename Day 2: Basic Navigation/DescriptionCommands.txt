@@ -1,0 +1,32 @@
+Title: Basic Navigation -- Day 2
+Source: https://linuxupskillchallenge.org/02/
+
+Learning Objective: 
+- Find the Documentation for the commands utilised.
+- Navigate between different directories.
+- Create, list, move, and delete files.
+
+Commands Learned:
+- `man` --> Details about a specific command
+- `tldr` --> A short and simplified version of `man` command
+- `apropos` --> Search for a keyword the commands to lookup for.
+- `help` --> Display information of a specific command, similar like `man`, if the builtin command cannot support `man`.
+- `type` --> Display the type of a command
+- `hier` --> Information about specific files inside the linux directories, starting from '/'.
+  Shortening of hierarchy, can be displayed via manual. 
+- `cd <folder>` --> Move into different folders
+  If the folder is not specified, it will go to the home directory.
+- `pwd` --> Display the working directory
+- `ls -ltra` --> list files on the current directory (All files and directories in the directory) 
+  (`-ltra` is the same as `-l -t -r -a`)
+- `mkdir <dirname>` --> Create a new directory
+- `mv` --> Move a directory into a different directory
+- `rmdir` --> Remove an empty directory
+- `rm -r <dirname>` --> remove a file or a directory that is not empty.
+  (For files, using `rm <filename>` is sufficient)
+- `touch <name>.<format>` --> Create a new empty file
+- `pushd <dirname>` --> Moves into <dirname> and saves it into a stack.
+  (`pushd` with multiple directories will change the directory listing)
+- `popd` --> Going back to the previous directory based on stack.
+
+

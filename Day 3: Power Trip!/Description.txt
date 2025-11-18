@@ -1,0 +1,4 @@
+Title: Power Trip! -- Day 3
+Description: Learning about sudo command and handling 2 administrative tasks:
+  1. Change date and time
+  2. Change host name

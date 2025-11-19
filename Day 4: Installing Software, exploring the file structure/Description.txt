@@ -1,0 +1,3 @@
+Title: Installing Software and exploring the file structure
+Description: Learning on how to install software on linux and explore file structure using "mc" command (Midnight Commander)
+

@@ -1,0 +1,7 @@
+Title: More or less
+Description: 
+- Learned about 2 commands: more and less -> useful for viewing files
+- Moving through different used commands using up and down arrow
+- Reading a dot file using more or less
+- Experimented about terminal multiplexer -- Screen and tmux
+

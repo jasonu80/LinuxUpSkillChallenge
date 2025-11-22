@@ -1,0 +1,10 @@
+Daily Challenge 1 -- System recon report
+
+Tasks:
+1. Identify the OS
+2. Inspect System Identity
+3. Check System Health
+4. Check Hardware 
+5. Basic Networking
+6. 7-10 points about findings above, and
+7. Reflect: How does knowing the identity of a system helps a pentester?

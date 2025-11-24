@@ -1,4 +1,5 @@
 #Enumeration report, Monday, 24 November 2025
+This is a learning system environment, not a production system.
 
 1. System
    Distro: Ubuntu

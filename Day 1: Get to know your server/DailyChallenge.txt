@@ -1,10 +1,13 @@
-Daily Challenge 1 -- System recon report
+Challenge 1: Linux Host Enumeration
 
-Tasks:
-1. Identify the OS
-2. Inspect System Identity
-3. Check System Health
-4. Check Hardware 
-5. Basic Networking
-6. 7-10 points about findings above, and
-7. Reflect: How does knowing the identity of a system helps a pentester?
+Challenge Objective:
+  Interpret the machine or host into a written report.
+Scenario:
+  There is a Linux server that is accessed via SSH only for 30-45 minutes time.
+Challenge:
+  1. What system is this? (document the distro, version, kernel version, and its architecture)
+  2. What is the current state of the machine? (Document how long it is been running, Who is running the machine and what privileges you have?)
+  3. What Hardware and Storage exists? (Document the CPU, RAM size and memory, Disks and partitions with mounted volumes)
+  4. What buses and peripherals present? (Document them, examples such as USB or PCI)
+  5. How does this machine connected to a network? (Document interfaces, IP addresses, interface statistics or bandwidth snapshot).
+

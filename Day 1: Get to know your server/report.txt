@@ -1,0 +1,56 @@
+#Enumeration report, Monday, 24 November 2025
+
+1. System
+   Distro: Ubuntu
+   Version: 25.04
+   Kernel Version: SMP PREEMPT_DYNAMIC
+   Architecture: aarch64
+	This Operating System is Linux with the Ubuntu distro and it is running version 25.04 with an aarch64 architecture.
+2. Machine current state
+   Running for: 5 min
+   Who is the user: mint
+   Privileges: user
+	This Machine has been running for 5 minutes since the start of making this report.
+3. Hardware and software information
+   CPU:6
+   RAM Size:12 GB
+   Memory: 12 GB
+   Disks:200 GB in total
+      1074 MB: Boot disk
+   Partitions with mounted volumes: 198 GB, EXT4 Volume
+	The Hardware has 6 CPUs with 12 GB of RAM and Memory, it has 2 disks in total, a boot disk (1074 MB) and a mounted disk (198 
+GB).
+4. Buses and peripherals
+   USB: 9 listed.
+	Bus 001 Device 001: ID <DEPRECATED>
+	Bus 001 Device 002: ID <DEPRECATED>
+	Bus 001 Device 003: ID <DEPRECATED>
+	Bus 001 Device 004: ID <DEPRECATED>
+	Bus 001 Device 005: ID <DEPRECATED>
+	Bus 001 Device 006: ID <DEPRECATED>
+	Bus 002 Device 001: ID <DEPRECATED> 
+	Bus 003 Device 001: ID <DEPRECATED> 
+	Bus 004 Device 001: ID <DEPRECATED>
+   PCI: 8 listed.
+	00:00.0 Host bridge
+	00:01.0 Ethernet controller
+	00:02.0 Display controller
+	00:03.0 Audio device
+	00:04.0 USB controller
+	00:05.0 USB controller
+	00:06.0 SCSI storage controller
+	00:07.0 Communication controller
+	00:08.0 Unclassified device [DEPRECATED]
+		The Hardware is connected to both USB and PCI.
+5. Network and interfaces
+   Interface: lo & eth0
+   IP Address: 127.0.0.1 & 192.168.xx.xx
+   Interface Statistics:
+   Kernel Interface table
+	Iface             MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+	eth0             1500    12529      0      0 0          3473      0      0      0 BMRU
+	lo              65536    18343      0      0 0         18343      0      0      0 LRU
+		The Hardware also connected to the network.
+
+
+Report created in less than 30 minutes.
